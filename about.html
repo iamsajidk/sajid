@@ -1,30 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Food Delivery Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- HEADER PART -->
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">Foodie.</a>
+            <ul class="navlist flex gap-3">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+            <div class="desktop-action flex gap-2">
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+                <a href="#" class="btn">sign in&nbsp;<i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="#" class="btn">sign in&nbsp;<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
         </nav>
     </header>
+    <!-- ABOUT SECTION -->
     <main>
-        <section class="about-section">
-            <h1>About Us</h1>
-            <p>Welcome to our Food Delivery Website! We are passionate about bringing delicious meals from your favorite restaurants straight to your door. Our mission is to make food delivery fast, easy, and enjoyable for everyone.</p>
-            <h2>Our Story</h2>
-            <p>Founded in 2026, we started as a small team with a big dream: to connect people with great food and exceptional service. Today, we partner with top local restaurants to offer a wide variety of cuisines for every taste and occasion.</p>
-            <h2>Contact</h2>
-            <p>Have questions or feedback? Reach out to us at <a href="mailto:support@fooddelivery.com">support@fooddelivery.com</a>.</p>
+        <section class="wrapper flex center about-section" style="min-height:60vh;align-items:center;">
+            <div class="content" style="max-width:700px;">
+                <h1>About Us</h1>
+                <p class="para">Welcome to our Food Delivery Website! We are passionate about bringing delicious meals from your favorite restaurants straight to your door. Our mission is to make food delivery fast, easy, and enjoyable for everyone.</p>
+                <h2>Our Story</h2>
+                <p class="para">Founded in 2026, we started as a small team with a big dream: to connect people with great food and exceptional service. Today, we partner with top local restaurants to offer a wide variety of cuisines for every taste and occasion.</p>
+                <h2>Contact</h2>
+                <p class="para">Have questions or feedback? Reach out to us at <a href="mailto:support@fooddelivery.com">support@fooddelivery.com</a>.</p>
+            </div>
         </section>
     </main>
+    <!-- FOOTER PART -->
     <footer>
-        <p>&copy; 2026 Food Delivery Website. All rights reserved.</p>
+        <div class="wrapper flex center" style="padding:2rem 0;">
+            <p>&copy; 2026 Food Delivery Website. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

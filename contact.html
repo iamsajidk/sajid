@@ -1,36 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Food Delivery Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- HEADER PART -->
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">Foodie.</a>
+            <ul class="navlist flex gap-3">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+            <div class="desktop-action flex gap-2">
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+                <a href="#" class="btn">sign in&nbsp;<i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="#" class="btn">sign in&nbsp;<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
         </nav>
     </header>
+    <!-- CONTACT SECTION -->
     <main>
-        <section class="contact-section">
-            <h1>Contact Us</h1>
-            <p>We'd love to hear from you! Fill out the form below or reach us at <a href="mailto:support@fooddelivery.com">support@fooddelivery.com</a>.</p>
-            <form class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        <section class="wrapper flex center contact-section" style="min-height:60vh;align-items:center;">
+            <div class="content" style="max-width:700px;">
+                <h1>Contact Us</h1>
+                <p class="para">We'd love to hear from you! Fill out the form below or reach us at <a href="mailto:support@fooddelivery.com">support@fooddelivery.com</a>.</p>
+                <form class="contact-form" style="display:flex;flex-direction:column;gap:1rem;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
+    <!-- FOOTER PART -->
     <footer>
-        <p>&copy; 2026 Food Delivery Website. All rights reserved.</p>
+        <div class="wrapper flex center" style="padding:2rem 0;">
+            <p>&copy; 2026 Food Delivery Website. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
